@@ -362,7 +362,7 @@ Usage
 Register or Log In:
 
 You can register a new user account through the frontend.
-Alternatively, you can use the default test credentials (auto-created on the first Docker run):
+Alternatively, you can use the default test credentials (auto-created on the first Docker run):/n
 Username: testuser
 Password: testpass
 Create, Edit, and Delete Notes: Once logged in, you can create new notes, edit their content, and delete them.
