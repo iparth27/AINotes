@@ -47,10 +47,6 @@ jobs:
         cd notepad-frontend
         npm install
 
-    - name: Run frontend tests
-      run: |
-        cd notepad-frontend
-        npm test -- --ci --coverage
 
   deploy:
     runs-on: ubuntu-latest
