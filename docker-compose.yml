@@ -1,0 +1,27 @@
+
+services:
+  backend:
+    build: ./backend
+    volumes:
+      - ./backend:/app
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+    environment:
+      - DATABASE_URL=sqlite:///./notes.db
+
+  frontend:
+    build: ./notepad-frontend
+    volumes:
+      - ./notepad-frontend:/app
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+
+  db:
+    image: nouchka/sqlite3
+    volumes:
+      - ./backend:/data
+    command: tail -f /dev/null

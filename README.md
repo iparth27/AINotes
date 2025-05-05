@@ -1,0 +1,2 @@
+# AINotes
+AI base notepad

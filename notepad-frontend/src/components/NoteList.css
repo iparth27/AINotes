@@ -1,0 +1,76 @@
+/* Container for the entire list of notes */
+.note-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+  }
+  
+  /* Individual note card styling */
+  .note-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Content section of the note */
+  .note-content {
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  
+  .note-content h3 {
+    margin: 0 0 5px 0;
+    font-size: 1.2em;
+    color: #333;
+  }
+  
+  .note-content p {
+    margin: 5px 0;
+    color: #555;
+  }
+  
+  .note-content p strong {
+    color: #000;
+  }
+  
+  /* Action buttons container */
+  .note-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+  
+  /* Common button styles */
+  .note-actions button {
+    border: none;
+    padding: 8px 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: #fff;
+  }
+  
+  /* Edit button style */
+  .note-actions .edit-button {
+    background-color: #1976d2;
+  }
+  
+  .note-actions .edit-button:hover {
+    background-color: #1565c0;
+  }
+  
+  /* Delete button style */
+  .note-actions .delete-button {
+    background-color: #f44336;
+  }
+  
+  .note-actions .delete-button:hover {
+    background-color: #d32f2f;
+  }
+  
