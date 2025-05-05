@@ -21,9 +21,10 @@ def test_user():
 @pytest.fixture
 def auth_token(test_user):
     res = client.post("/token", data={
-        "username": test_user["username"],
-        "password": test_user["password"]
+    "username": test_user["username"],
+    "password": test_user["password"]
     })
+
     assert res.status_code == 200
     return res.json()["access_token"]
 
